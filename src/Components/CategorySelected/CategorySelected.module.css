@@ -1,0 +1,25 @@
+.cardSelected{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #148A08;
+    color: #fff;
+    padding: 0.45em 1em;
+    text-align: center;
+    border-radius: 40px;
+    margin: .4em .6em;
+}
+
+button{
+    background: none;
+    border: none;
+    margin: 0 0 0 .5em;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(169, 168, 168);
+
+}
+
+button:hover{
+    color: rgb(208 , 206 , 206); 
+}

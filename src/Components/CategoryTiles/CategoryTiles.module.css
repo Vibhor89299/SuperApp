@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins&family=Roboto:wght@300&family=Single+Day&display=swap');
+
+.tileBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 1rem;
+}
+.tileBox:hover{
+    border: 2px solid #ffff;
+}
+.active{
+    border: 2px solid #ffff;
+
+}
+.inactive{
+    border: 2px solid black;
+}
+
+h5{
+    color: #fff;
+    font-size: 2.25rem;
+    margin: 0.3em 0 0 0 ;
+    letter-spacing: 3px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+}
+
+.tileBox img{
+    width: 130px;
+    border-radius: 11px;
+    border: 1px solid;
+    margin: 0.7em;
+
+}
+
+@media screen and (max-width: 955px){
+    .tileBox img{
+        width: 100px;
+    }
+}

@@ -7,7 +7,7 @@ import styles from './SignUpForm.module.css'
 
 function SignUpForm(){
     
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const [isChecked , setIsChecked] = useState(false)
 
@@ -43,7 +43,7 @@ function SignUpForm(){
      }
      setError('false');
      localStorage.setItem('userDetail' , JSON.stringify(inputs))
-        // navigate ('/category');
+        navigate ('/category');
    }
    
    return (
