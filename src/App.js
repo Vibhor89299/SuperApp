@@ -1,4 +1,4 @@
-import { BrowserRouter , Route , Routes } from "react-router-dom";
+import { HashRouter , Route , Routes } from "react-router-dom";
 import Registration from "./Pages/Registration/Registration";
 import Category from "./Pages/Category/Category";
 
@@ -6,12 +6,12 @@ import Category from "./Pages/Category/Category";
 function App() {
   return (
     <>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
          <Route path='/' element={<Registration /> } />
          <Route path='/category' element={<Category />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
     </>
   );
 }
