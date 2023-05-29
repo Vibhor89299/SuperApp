@@ -6,7 +6,7 @@ function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route path="superapp/" element={<Registration />} />
+        <Route path="/" element={<Registration />} />
         <Route path="/category" element={<Category />} />
       </Routes>
     </HashRouter>
