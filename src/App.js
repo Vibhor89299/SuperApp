@@ -1,14 +1,16 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+
 import Registration from "./Pages/Registration/Registration";
 import Category from "./Pages/Category/Category";
 
+import { HashRouter, Route, Switch } from "react-router-dom";
+
 function App() {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
-      <Routes>
-        <Route path="/" element={<Registration />} />
-        <Route path="/category" element={<Category />} />
-      </Routes>
+    <HashRouter>
+      <Switch>
+        <Route exact path="/" component={Registration} />
+        <Route path="/category" component={Category} />
+      </Switch>
     </HashRouter>
   );
 }
