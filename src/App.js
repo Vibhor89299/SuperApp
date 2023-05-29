@@ -4,7 +4,7 @@ import Category from "./Pages/Category/Category";
 
 function App() {
   return (
-    <HashRouter>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Registration />} />
         <Route path="/category" element={<Category />} />
